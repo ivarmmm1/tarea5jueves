@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: rgb(235, 234, 234);
+}
+.contenedor{
+    background-color: transparent;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:"cabecera "
+                        "cont0 "
+                        "cont "
+                        "contp"
+                        "pie";
+}
+.contenedor .cabecera{
+    
+    grid-area: cabecera;
+}
+.contenedor .cont0{
+    grid-area: cont0;
+}
+.contenedor .cont{
+    /*background-color: rgb(185, 203, 209);*/
+    grid-area: cont;
+    display: flex;
+    gap: 5px;
+
+}
+.contenedor .contp{
+    grid-area: contp;
+}
+
+.contenedor .pie{
+    background-color: rgb(167, 64, 226);
+    grid-area: pie;
+}
+
+@media (max-width: 800px) {
+    .cont{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

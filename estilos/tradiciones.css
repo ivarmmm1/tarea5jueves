@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: rgb(235, 234, 234);
+}
+.contenedor{
+    background-color: transparent;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:"cabecera"
+                        "cont0"
+                        "cont1"
+                        "cont2"
+                        "pie";
+}
+.contenedor .cabecera{
+    
+    grid-area: cabecera;
+}
+.contenedor .cont0{
+    grid-area: cont0;
+}
+.contenedor .cont1{
+    background-color: white;
+    grid-area: cont1;
+}
+.contenedor .cont2{
+    background-color: rgb(255, 255, 255);
+    grid-area: cont2;
+}
+.contenedor .pie{
+    background-color: rgb(202, 136, 240);
+    grid-area: pie;
+}

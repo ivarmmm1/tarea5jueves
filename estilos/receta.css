@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: rgb(235, 234, 234);
+}
+.contenedor{
+    background-color: transparent;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:"cabecera"
+                        "cont0 "
+                        "crecetas"
+                        "pie ";
+}
+.contenedor .cabecera{
+    
+    grid-area: cabecera;
+}
+.contenedor .cont0{
+    grid-area: cont0;
+}
+.contenedor .crecetas{
+    
+    grid-area: crecetas;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:"partes-1"
+                        "partes-2 "
+                        "partes-3 ";
+
+}
+.crecetas .partes-1{
+    
+    grid-area: partes-1;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+.crecetas .partes-2{
+    
+    grid-area: partes-2;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+.crecetas .partes-3{
+    
+    grid-area: partes-3;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+
+
+.contenedor .pie{
+    background-color: rgb(202, 136, 240);
+    grid-area: pie;
+}
+.recetas{
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 800px) {
+    .partes-1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .partes-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .partes-3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

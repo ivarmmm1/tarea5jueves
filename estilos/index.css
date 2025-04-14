@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: rgb(235, 234, 234);
+}
+.contenedor{
+    background-color: transparent;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:"cabecera"
+                        "cont1"
+                        "cont2"
+                        "pie";
+}
+.contenedor .cabecera{
+    background-color: transparent;
+    grid-area: cabecera;
+}
+.contenedor .cont1{
+    
+    grid-area: cont1;
+    padding: 0 80px;
+}
+.contenedor .cont2{
+    /*background-color: blanchedalmond;*/
+    grid-area: cont2;
+    padding: 0 10px;
+}
+.contenedor .pie{
+    /*background-color: aquamarine;*/
+    grid-area: pie;
+}
+.slide img {
+    width: 500px;
+    height: 350px;
+}
